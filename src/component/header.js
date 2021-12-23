@@ -9,7 +9,7 @@ class Header extends Component {
       <div className="container">
         <nav className="navbar navbar-expand-lg bg-white navbar-white">
           <a className="navbar-brand">
-            <img src={logo} />
+            <img src={logo} alt="logo"/>
           </a>
           <button className="navbar-toggler border" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span className="fa fa-bars"></span>
