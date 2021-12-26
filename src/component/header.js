@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import logo from '../img/logo.svg';
-import '../css/style.css';
-import '../css/bootstrap.min.css';
 
 class Header extends Component {
   render() {
