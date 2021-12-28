@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../img/logo.svg';
 import chat from '../img/illustrations/chat.png';
 import star from '../img/svg/illustrations/star.svg';
 import starhalf from '../img/svg/brands/amazon-white-50.svg';
@@ -75,7 +74,7 @@ class Home extends Component {
                                         <div className="card-body ">
                                             <div className="row align-items-sm-center mb-5 ">
                                                 <div className="col-sm-12 col-lg-4 order-sm-2 mb-3 mb-sm-0 ">
-                                                    <img className="avatar img-fluid " src={chat} alt="Image Description " />
+                                                    <img className="avatar img-fluid " alt="Image Description"  src={chat} />
                                                 </div>
 
                                                 <div className="col-sm-12 col-lg-8 ">
