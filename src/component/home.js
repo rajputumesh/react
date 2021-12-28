@@ -9,12 +9,10 @@ import googlewhite from '../img/svg/brands/google-white-50.svg';
 import shape1 from '../img/svg/components/shape-1-soft-light.svg';
 import shape2 from '../img/svg/components/shape-2-soft-light.svg';
 import shape3 from '../img/svg/components/shape-3-soft-light.svg';
-import '../css/style.css';
-import '../css/bootstrap.min.css';
-
+import Gallery from './Gallery.js';
 class Home extends Component {
     render() {
-        return (
+        return (<>
             <div className="homebar">
                 <div className="bg-primary-dark space-y position-relative overflow-hidden ">
                     <div className="container ">
@@ -193,6 +191,10 @@ class Home extends Component {
                     </div>
                 </div>
             </div>
+            <div>
+                <Gallery />
+            </div>
+            </>
         );
     }
 }
