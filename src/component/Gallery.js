@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import _Product from './product/_Product.js';
-import { robots } from './robots.js';
 import Search from './Search.js';
 
 class Gallery extends Component {
@@ -8,9 +7,15 @@ class Gallery extends Component {
   {
     super()
     this.state = {
-      'robots': robots,
+      'robots': [],
       'searchFeild':''
     }
+  }
+  componentDidMount(){
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(users =>
+      this.setState({robots:users}));
   }
 
   searchRobots = (event) =>{
